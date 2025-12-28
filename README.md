@@ -4,8 +4,6 @@
 [![Release Version](https://img.shields.io/badge/release-4.0.0-brightgreen.svg)](https://gitee.com/iotechn/unimall) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://gitee.com/iotechn/unimall/pulls)
 
 
-[(English Documents Available)](readme_en.md)
-
 > **社区版**
 
 Unimall 针对中小商户、企业和个人学习者开发。使用Java编码，采用SpringBoot3、Mybatis-Plus等易用框架，适合个人学习研究。同时支持单机部署、集群部署，中小商户企业可根据业务动态扩容。unimall使用uniapp前端框架，可同时编译到 微信小程序、H5、Android App、iOS App等几个平台，可为中小商户企业节约大量维护成本。也可支撑中小商户企业前期平台横扩需求。
@@ -30,13 +28,6 @@ Unimall社区版源码包含:
 - develop: 正在开发的分支
   - dev-v4: 此分支已经完全测试过，但还没上过生产，可直接使用
 
-## Contact 联系
-
-QQ讨论群：656676341(1群已满) 940197916(2群已满) **936569693(3群)** (进群前，请在网页右上角点**star**)
-
-微信群： (微信群二维码超100人，请加此微信备注意图，接受邀请)
-
-![front](http://img.dobbinsoft.com/commons/274/072582cf823c47c89566f962601da4d8.jpeg?imageMogr2/thumbnail/400x)
 
 ## Experience 体验
 
@@ -173,3 +164,144 @@ Unimall SaaS版每年980元。这个价格就和服务器的价格差不多。
 ## Contributing 贡献
 
 如果你有好的意见或建议，欢迎给我们提 Issues 或 Pull Requests，为Unimall开源商城贡献力量。关于分支/issue及PR。
+
+
+## 本地部署指南
+
+### 环境准备
+
+| 软件 | 版本要求 | 官网链接 |
+|:-----|:---------|:---------|
+| JDK | 21+ | [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/) |
+| MySQL | 5.7+ | [https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/) |
+| Redis | 5.0+ | [https://redis.io/download/](https://redis.io/download/) |
+| Maven | 3.8+ | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+| Node.js | 14+ | [https://nodejs.org/en/download/](https://nodejs.org/en/download/) |
+| HBuilderX（可选） | 最新版 | [https://www.dcloud.io/hbuilderx.html](https://www.dcloud.io/hbuilderx.html) |
+
+### 环境搭建步骤
+
+#### 1. 安装JDK
+
+1. 下载并安装JDK 21
+2. 配置环境变量`JAVA_HOME`指向JDK安装目录
+3. 将`%JAVA_HOME%\bin`添加到`PATH`环境变量
+4. 验证安装：`java -version`
+
+#### 2. 安装MySQL
+
+1. 下载并安装MySQL 5.7或更高版本
+2. 启动MySQL服务
+3. 创建数据库：`CREATE DATABASE unimall CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
+4. 导入初始化SQL脚本：`mysql -u root -p unimall < sql/unimallv4.sql`
+
+#### 3. 安装Redis
+
+1. 下载并安装Redis 5.0或更高版本
+2. 启动Redis服务：`redis-server`
+
+#### 4. 安装Maven
+
+1. 下载并解压Maven
+2. 配置环境变量`MAVEN_HOME`指向Maven安装目录
+3. 将`%MAVEN_HOME%\bin`添加到`PATH`环境变量
+4. 验证安装：`mvn -version`
+
+#### 5. 安装Node.js
+
+1. 下载并安装Node.js 14或更高版本
+2. 验证安装：`node -v` 和 `npm -v`
+3. 安装cnpm（可选，加速依赖安装）：`npm install -g cnpm --registry=https://registry.npm.taobao.org`
+
+### 后端部署
+
+#### 1. 配置数据源
+
+编辑`unimall-runner/src/main/resources/application.yaml`文件，修改以下配置：
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/unimall?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: your_mysql_password
+  redis:
+    host: localhost:6379
+  user-redis:
+    host: localhost:6379
+  lock-redis:
+    host: localhost:6379
+```
+
+#### 2. 编译打包
+
+在项目根目录执行命令：
+
+```bash
+mvn clean package -Dmaven.test.skip=true
+```
+
+编译完成后，生成的jar包位于`unimall-runner/target/unimall-runner-v4.jar`
+
+#### 3. 启动后端服务
+
+```bash
+java -jar unimall-runner/target/unimall-runner-v4.jar
+```
+
+服务将在`http://localhost:8000/unimall`启动
+
+### 前端部署
+
+#### 1. 后台管理系统（unimall-admin）
+
+1. 进入后台管理系统目录：`cd unimall-admin`
+2. 安装依赖：`npm install` 或 `cnpm install`
+3. 配置后端API地址：编辑`unimall-admin/config/dev.env.js`文件
+
+```javascript
+module.exports = {
+  NODE_ENV: '"development"',
+  HOST: '"http://localhost:8000"',
+  BASE_API: '"http://localhost:8000/unimall/m.api"'
+}
+```
+
+4. 启动开发服务器：`npm run dev`
+5. 访问后台管理系统：`http://localhost:9528`
+
+#### 2. 移动端应用（unimall-app）
+
+**方式一：使用HBuilderX开发**
+
+1. 下载并安装HBuilderX
+2. 打开HBuilderX，选择"文件" -> "导入" -> "从本地目录导入"，选择`unimall-app`目录
+3. 配置后端API地址：编辑`unimall-app/config/.env.development`文件
+
+```javascript
+module.exports = {
+  baseUrl: 'http://localhost:8000/unimall'
+}
+```
+
+4. 运行项目：点击HBuilderX工具栏上的"运行"按钮，选择对应的运行方式（浏览器、小程序、APP等）
+
+**方式二：使用命令行开发**
+
+1. 进入移动端应用目录：`cd unimall-app`
+2. 安装依赖：`npm install` 或 `cnpm install`
+3. 启动H5开发服务器：`npm run dev:h5`
+4. 访问H5应用：`http://localhost:8080`
+
+### 访问项目
+
+- 后台管理系统：`http://localhost:9528`（默认账号：admin，密码：1234567）
+- 移动端H5应用：`http://localhost:8080`
+- 后端API：`http://localhost:8000/unimall`
+
+### 常见问题
+
+1. **端口冲突**：如果8000、9528或8080端口被占用，可以修改配置文件中的端口号
+2. **数据库连接失败**：检查MySQL服务是否启动，用户名、密码和数据库名称是否正确
+3. **Redis连接失败**：检查Redis服务是否启动，配置文件中的Redis地址是否正确
+4. **前端编译失败**：尝试删除`node_modules`目录，重新安装依赖
