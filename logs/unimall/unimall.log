@@ -943,3 +943,169 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 [2025-12-28 11:43:28.230] [http-nio-8000-exec-8] INFO  c.dobbinsoft.fw.launcher.controller.ApiController:235 - [HTTP] R="{\"errno\":200,\"errmsg\":null,\"data\":\"ok\",\"contentType\":\"\",\"timestamp\":1766893408206}"; D=24ms
 [2025-12-28 11:49:24.390] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
 [2025-12-28 11:49:24.395] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[2025-12-28 12:22:51.115] [main] INFO  c.d.unimall.runner.UnimallRunnerApplication:50 - Starting UnimallRunnerApplication using Java 21.0.9 with PID 41832 (D:\projects\unimall\unimall-runner\target\classes started by Administrator in D:\projects\unimall)
+[2025-12-28 12:22:51.118] [main] INFO  c.d.unimall.runner.UnimallRunnerApplication:654 - No active profile set, falling back to 1 default profile: "default"
+[2025-12-28 12:22:51.981] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:295 - Multiple Spring Data modules found, entering strict repository configuration mode
+[2025-12-28 12:22:51.983] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-12-28 12:22:52.010] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+[2025-12-28 12:22:52.859] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:111 - Tomcat initialized with port 8000 (http)
+[2025-12-28 12:22:52.870] [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8000"]
+[2025-12-28 12:22:52.875] [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2025-12-28 12:22:52.875] [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+[2025-12-28 12:22:52.940] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/unimall]:173 - Initializing Spring embedded WebApplicationContext
+[2025-12-28 12:22:52.941] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1768 ms
+[2025-12-28 12:22:54.173] [main] INFO  c.d.fw.pay.service.pay.wx.WxPayServiceImpl:75 - [微信支付] 未加载P12证书
+[2025-12-28 12:22:55.307] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.address.list
+[2025-12-28 12:22:55.307] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.list
+[2025-12-28 12:22:55.307] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.info
+[2025-12-28 12:22:55.307] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.delete
+[2025-12-28 12:22:55.308] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.create
+[2025-12-28 12:22:55.308] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.logout
+[2025-12-28 12:22:55.308] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.login
+[2025-12-28 12:22:55.308] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.edit
+[2025-12-28 12:22:55.309] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.sendLoginMsg
+[2025-12-28 12:22:55.309] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.bindUniNotify
+[2025-12-28 12:22:55.309] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.newPassword
+[2025-12-28 12:22:55.309] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.advert.list
+[2025-12-28 12:22:55.310] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.advert.delete
+[2025-12-28 12:22:55.310] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.advert.create
+[2025-12-28 12:22:55.310] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.advert.edit
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.appraise.list
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.appraise.delete
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.category.update
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.category.list
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.category.delete
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.category.create
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.category.categoryTree
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.coupon.list
+[2025-12-28 12:22:55.311] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.coupon.delete
+[2025-12-28 12:22:55.312] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.coupon.create
+[2025-12-28 12:22:55.312] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.coupon.edit
+[2025-12-28 12:22:55.312] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.coupon.updateCouponStatus
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.dashboard.integral
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.erp.syncCategory
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.erp.syncProduct
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.freight.list
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.freight.delete
+[2025-12-28 12:22:55.313] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.freight.create
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.freight.edit
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.list
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.detail
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.editAdminMono
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.queryToExcel
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.ship
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.statistics
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.order.refund
+[2025-12-28 12:22:55.314] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.groupshop.list
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.groupshop.delete
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.groupshop.create
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.groupshop.edit
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.list
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.delete
+[2025-12-28 12:22:55.315] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.create
+[2025-12-28 12:22:55.316] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.detail
+[2025-12-28 12:22:55.316] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.edit
+[2025-12-28 12:22:55.316] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.getSpuBigTree
+[2025-12-28 12:22:55.316] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.freezeOrActivation
+[2025-12-28 12:22:55.316] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.batchDelete
+[2025-12-28 12:22:55.317] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.product.rebuildProductCache
+[2025-12-28 12:22:55.317] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.update
+[2025-12-28 12:22:55.317] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.list
+[2025-12-28 12:22:55.317] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.delete
+[2025-12-28 12:22:55.317] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.options
+[2025-12-28 12:22:55.318] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.create
+[2025-12-28 12:22:55.318] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.permissionSet
+[2025-12-28 12:22:55.318] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.role.permissionList
+[2025-12-28 12:22:55.318] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.user.list
+[2025-12-28 12:22:55.318] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.user.delete
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.user.edit
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.user.editStatus
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.order.list
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.order.refund
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.template.list
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.template.delete
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.template.create
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] admin.vip.template.edit
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.list
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.delete
+[2025-12-28 12:22:55.319] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.create
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.edit
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.getAddressById
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] address.getDefAddress
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] advert.getActiveAd
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] appraise.delete
+[2025-12-28 12:22:55.320] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] appraise.create
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] appraise.getSpuAppraisePage
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] appraise.getAppraiseById
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] appraise.getUserAllAppraise
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.removeCartItemBatch
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.getCartList
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.addCartItem
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.subCartItem
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.countCart
+[2025-12-28 12:22:55.321] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.updateCartItemNum
+[2025-12-28 12:22:55.322] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.removeCartItem
+[2025-12-28 12:22:55.322] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] cart.removeCartAll
+[2025-12-28 12:22:55.322] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] category.getCategoryFamily
+[2025-12-28 12:22:55.322] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] category.categoryList
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] coupon.getObtainableCoupon
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] coupon.getUserCoupons
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] coupon.getVipCoupons
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] coupon.obtainCoupon
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] favorite.list
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] favorite.delete
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] favorite.create
+[2025-12-28 12:22:55.323] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] favorite.getFavoriteBySpuId
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] favorite.getFavoriteById
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] footprint.list
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] footprint.delete
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] footprint.deleteAll
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] groupshop.getGroupShopPage
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] integral.getIndexData
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.cancel
+[2025-12-28 12:22:55.324] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.getOrderDetail
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.refund
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.takeOrder
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.prepay
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.confirm
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.queryShip
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.offlinePrepay
+[2025-12-28 12:22:55.325] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.getOrderPage
+[2025-12-28 12:22:55.326] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] order.previewFreight
+[2025-12-28 12:22:55.327] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] product.getProductPage
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] product.getProduct
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.info
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.register
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.logout
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.login
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.getH5Sign
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.bindPhone
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.checkLogin
+[2025-12-28 12:22:55.328] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.getWxPhone
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.sendVerifyCode
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.resetPassword
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.thirdPartLogin
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] user.syncUserInfo
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] vip.order.prepay
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] vip.order.queryVipOrder
+[2025-12-28 12:22:55.329] [main] INFO  c.dobbinsoft.fw.launcher.manager.ClusterApiManager:162 - [注册OpenApi] vip.template.list
+[2025-12-28 12:22:55.913] [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8000"]
+[2025-12-28 12:22:55.923] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:243 - Tomcat started on port 8000 (http) with context path '/unimall'
+[2025-12-28 12:22:56.026] [main] INFO  c.d.unimall.runner.UnimallRunnerApplication:56 - Started UnimallRunnerApplication in 5.485 seconds (process running for 6.251)
+[2025-12-28 12:22:56.030] [main] INFO  c.d.unimall.runner.UnimallRunnerApplication:42 - [Unimall IoC] 系统初始化成功！
+[2025-12-28 12:22:56.376] [http-nio-8000-exec-1] INFO  org.apache.coyote.http11.Http11Processor:175 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xc70x010x000x000xc30x030x03U`0x97{0x11V0xa5B0xaf0xcfm0x9a0xa1H0x880xb0D0xef^v90xde0x8c&~'V170x1f0x7fz0x000x0080xc0,0xc000x000x9f0xcc0xa90xcc0xa80xcc0xaa0xc0+0xc0/0x000x9e0xc0$0xc0(0x00k0xc0#0xc0'0x00g0xc00x0a0xc00x140x0090xc00x090xc00x130x0030x000x9d0x000x9c0x00=0x00<0x0050x00/0x000xff0x010x000x00b0x000x000x000x0c0x000x0a0x000x000x07alanine0x000x0b0x000x040x030x000x010x020x000x0a0x000x0c0x000x0a0x000x1d0x000x170x000x1e0x000x190x000x180x00#0x000x000x000x160x000x000x000x170x000x000x000x0d0x00*0x00(0x040x030x050x030x060x030x080x070x080x080x080x090x080x0a0x080x0b0x080x040x080x050x080x060x040x010x050x010x060x010x030x030x030x010x030x020x040x020x050x020x060x02...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2025-12-28 12:23:00.082] [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource:109 - HikariPool-1 - Starting...
+[2025-12-28 12:23:00.345] [scheduling-1] INFO  com.zaxxer.hikari.pool.HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76669c0a
+[2025-12-28 12:23:00.347] [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource:122 - HikariPool-1 - Start completed.

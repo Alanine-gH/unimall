@@ -103,7 +103,7 @@
     "quickapp" : {},
     "mp-weixin" : {
         "usingComponents" : true,
-        "appid" : "wx5b5151f58ec8d538",
+        "appid" : "wx43fda6772134224e",
         "setting" : {
             "urlCheck" : true
         }
